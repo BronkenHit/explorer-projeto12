@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Calculadora IMC</title>
+</head>
+<body>
+    <div class="alert-error hide">
+        <p>
+            Digite apenas números!
+        </p>
+    </div>
+
+    <main>
+        <h1>Cálculo de IMC</h1>
+        <form action="">
+            <div class="input-wrapper">
+                <label for="">Peso (Kg)</label>
+                <input type="number" name="" id="weight">
+            </div>
+            <div class="input-wrapper">
+                <label for="">Altura (cm)</label>
+                <input type="number" name="" id="height">
+            </div>
+            <div class="input-wrapper">
+                <button type="submit" id="">Calcular IMC</button>
+            </div>
+        </form>
+    </main>
+
+    <div class="modal-wrapper hide">
+        <div class="modal-card">
+            <h2>
+                <button class="close">
+                    <img src="assets/xmark.svg" alt="" srcset="">
+                </button>
+                
+                <span>Seu IMC é de 28</span>
+            </h2>
+        </div>
+    </div>
+
+    <script src="modal.js"></script>
+    <script src="script.js" type="module" defer></script>
+</body>
+</html>
